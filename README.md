@@ -1,7 +1,13 @@
 # 🎨 Auto Whisk (Multi-Version) v8.0.0
-[![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md) [![English](https://img.shields.io/badge/English-blue)](README.md) 
+1. Download Here  
+   [![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/auto-whisk-prompt-automat/gedfnhdibkfgacmkbjgpfjihacalnlpn)
 
-[![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/auto-whisk-prompt-automat/gedfnhdibkfgacmkbjgpfjihacalnlpn)
+2. Beginner’s Guide  
+   [![English](https://img.shields.io/badge/English-blue)](README.md)
+
+3. Hướng dẫn sử dụng  
+   [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md)
+
 ### The Ultimate Automation Assistant for Google Whisk
 
 **Auto Whisk** is a powerful Chrome Extension designed to automate your creative workflow on Google Whisk AI. Stop clicking manually and waiting for every single image—let Auto Whisk turn your hundreds of prompts into reality with just one click\! 🚀
@@ -82,7 +88,7 @@ This tool is developed and maintained for free by **duckmartians (Đặng Minh �
 If this tool helps speed up your work, consider buying me a coffee\! ❤️
 
   * **Donate:** [Buy Me a Coffee](https://duckmartians.info/)
-  * **Website:** [https://duckmartians.info/](https://duckmartians.info/)
+  * **Website:** [https://duckmartians.info](https://duckmartians.info/)
 
 -----
 
