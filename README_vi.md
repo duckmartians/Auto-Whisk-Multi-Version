@@ -1,7 +1,13 @@
 # 🎨 Auto Whisk (Multi-Version) v8.0.0
-[![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md) [![English](https://img.shields.io/badge/English-blue)](README.md) 
+1. Tải tiện ích tại đây  
+   [![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/auto-whisk-prompt-automat/gedfnhdibkfgacmkbjgpfjihacalnlpn)
 
-[![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/auto-whisk-prompt-automat/gedfnhdibkfgacmkbjgpfjihacalnlpn)
+2. Beginner’s Guide  
+   [![English](https://img.shields.io/badge/English-blue)](README.md)
+
+3. Hướng dẫn sử dụng  
+   [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md)
+
 ### Trợ thủ đắc lực cho Sáng tạo Nghệ thuật trên Google Whisk
 
 **Auto Whisk** là công cụ mở rộng (Extension) giúp bạn tự động hóa quy trình tạo ảnh trên Google Whisk AI. Không còn phải ngồi canh từng ảnh, không còn mỏi tay click chuột – hãy để Auto Whisk giúp bạn hiện thực hóa hàng trăm ý tưởng chỉ với một cú click\! 🚀
