@@ -44,29 +44,29 @@ Bấm biểu tượng extension → bảng bên hông hiện 3 lựa chọn:
 
 > **Khuyên dùng** — Tốc độ cao, chạy ngầm ổn định, không cần mở trang Whisk.
 
-### Nhập mô tả
+### Nhập prompt
 
-Gõ/dán các mô tả vào ô văn bản, hoặc bấm **"Nhập từ file"** để chọn file `.txt`.
+Gõ/dán các prompt (mô tả ảnh) vào ô văn bản, hoặc bấm **"Nhập từ file"** để chọn file `.txt`.
 
-**Hai chế độ tách mô tả:**
+**Hai chế độ tách prompt:**
 
 | Chế độ | Cách hoạt động | Khi nào dùng |
 |---|---|---|
-| **1 dòng = 1 mô tả** | Mỗi dòng là 1 mô tả riêng | Mô tả ngắn |
-| **Cách dòng trống** | Các dòng liền nhau ghép thành 1 mô tả | Mô tả dài nhiều dòng |
+| **1 dòng = 1 prompt** | Mỗi dòng là 1 prompt riêng | Prompt ngắn |
+| **Cách dòng trống** | Các dòng liền nhau ghép thành 1 prompt | Prompt dài nhiều dòng |
 
 ### Thiết lập
 
 | Tùy chọn | Chi tiết |
 |---|---|
-| **Tỉ lệ ảnh** | `1:1` · `16:9` · `9:16` · `4:3` · `3:4` |
-| **Số ảnh / mô tả** | 1 → 4 ảnh (VD: 10 mô tả × 3 ảnh = 30 ảnh) |
+| **Tỉ lệ ảnh** | [1:1](file:///d:/Data/Downloads/8.2.2_0/v7.6.0/i18n.js#429-436) · `16:9` · `9:16` · `4:3` · `3:4` |
+| **Số lượng** | 1 → 4 ảnh (VD: 10 prompt × 3 ảnh = 30 ảnh) |
 | **Thư mục lưu** | Tên thư mục con trong Downloads |
-| **Tải tự động** | Bật/tắt — mặc định **bật** |
+| **Tự động tải** | Bật/tắt — mặc định **bật** |
 
 ### 🎨 Ảnh tham chiếu
 
-Đính kèm ảnh mẫu để AI bắt chước phong cách, chủ thể hoặc bối cảnh.
+Đính kèm ảnh mẫu để AI bắt chước Phong cách, Chủ thể hoặc Bối cảnh.
 
 Bấm **"Ảnh tham chiếu"** → cửa sổ quản lý hiện ra:
 
@@ -76,9 +76,9 @@ Bấm **"Ảnh tham chiếu"** → cửa sổ quản lý hiện ra:
 | **Bối cảnh** | Phong cảnh / nền muốn đặt chủ thể vào | 1 |
 | **Phong cách** | Phong cách nghệ thuật muốn AI bắt chước | 1 |
 
-**Cách dùng:** Bấm `+` chọn ảnh → Bấm **"Upload & Phân tích"** (AI tự phân tích nội dung) → Sửa caption nếu cần → **"Lưu Caption"** → **"Xong"**.
+**Cách dùng:** Bấm `+` chọn ảnh → Bấm **"Upload & Phân tích"** → Sửa caption nếu cần → **"Lưu Caption"** → **"Xong"**.
 
-> Ảnh tham chiếu được áp dụng cho **tất cả** mô tả trong danh sách.
+> Ảnh tham chiếu được áp dụng cho **tất cả** prompt trong danh sách.
 
 ### Điều khiển
 
@@ -93,7 +93,7 @@ Bấm **"Ảnh tham chiếu"** → cửa sổ quản lý hiện ra:
 | Cột | Ý nghĩa |
 |---|---|
 | **#** | Số thứ tự |
-| **Prompt** | Nội dung mô tả *(có thể sửa trực tiếp)* |
+| **Prompt** | Nội dung prompt *(có thể sửa trực tiếp)* |
 | **IMG 1, 2…** | Ảnh thu nhỏ — bấm để **xem phóng to** |
 | **TT** | ⏳ Chờ · 🔄 Đang tạo · ✅ Xong · 🔃 Lỗi *(bấm để thử lại)* |
 
@@ -120,21 +120,21 @@ Extension **tự lấy phiên đăng nhập** Google của bạn. Nếu chưa c�
 
 | Tùy chọn | Mô tả |
 |---|---|
-| **Dự án mới** | Tự mở Whisk, tạo project mới rồi chạy |
-| **Tiếp tục trên trang hiện tại** | Chạy ngay trên project đang mở |
+| 🚀 **Tạo dự án mới** | Tự mở Whisk, tạo project mới rồi chạy |
+| ➡️ **Chạy luôn tại đây** | Chạy ngay trên project đang mở |
 
 ### Thiết lập riêng
 
 | Tùy chọn | Chi tiết |
 |---|---|
-| **Chờ giữa các lần gửi** | Ngẫu nhiên (min–max giây) hoặc cố định (≥10 giây) |
-| **Số lần lặp / mô tả** | Mỗi lần Whisk tạo 2 ảnh (VD: 5 mô tả × 3 lần = 30 ảnh) |
-| **Bắt đầu từ vị trí** | Nhập số thứ tự để bỏ qua các mô tả phía trước |
+| **Thời gian chờ** | Ngẫu nhiên (min–max giây) hoặc cố định (≥10 giây) |
+| **Thực thi mỗi prompt** | Mỗi lần Whisk tạo 2 ảnh (VD: 5 prompt × 3 lần = 30 ảnh) |
+| **Bắt đầu từ prompt** | Nhập số thứ tự để bỏ qua các prompt phía trước |
 
 ### Nhật ký & Xử lý lỗi
 
-- 📋 **Nhật ký thời gian thực** — theo dõi từng bước: chuẩn bị, gửi mô tả, tải ảnh, lỗi…  
-- 📝 **Danh sách prompt lỗi** — liệt kê riêng kèm lý do, bấm **"Sao chép"** để copy và thử lại  
+- 📋 **Log chi tiết** — theo dõi từng bước: chuẩn bị, gửi prompt, tải ảnh, lỗi…  
+- 📝 **Prompt lỗi** — liệt kê riêng kèm lý do, bấm **"Sao chép các prompt lỗi"** để copy và thử lại  
 - 🔄 **Tự thử lại** khi hàng đợi đầy (tối đa 20 lần + tải lại trang)  
 - ⏳ **Tự chờ** khi gặp thông báo lỗi, tiếp tục khi lỗi biến mất  
 - 📥 **Quét rà soát cuối** (30 giây) để đảm bảo không bỏ sót ảnh  
@@ -148,22 +148,22 @@ Extension **tự lấy phiên đăng nhập** Google của bạn. Nếu chưa c�
 | Cần mở tab Whisk | ❌ | ✅ Bắt buộc |
 | Tốc độ | ⚡ Nhanh | 🐢 Chậm hơn |
 | Chạy nền ổn định | ✅ | ⚠️ Cần giữ tab |
-| Số ảnh / mô tả | 1–4 tuỳ chọn | Cố định 2 |
+| Số lượng ảnh / prompt | 1–4 tuỳ chọn | Cố định 2 |
 | Ảnh tham chiếu | ✅ | ❌ |
 | Tên file theo nội dung | ✅ | Theo số thứ tự |
-| Chọn tỉ lệ ảnh | 5 tỉ lệ | Mặc định Whisk |
-| Mô tả nhiều dòng | ✅ | ❌ |
+| Tỉ lệ ảnh | 5 tỉ lệ | Mặc định Whisk |
+| Prompt nhiều dòng | ✅ | ❌ |
 | Tuỳ chỉnh thời gian chờ | Tự động 2–5s | ✅ Tuỳ chỉnh |
-| Lặp mô tả | Dùng số ảnh | ✅ Tuỳ chỉnh |
-| Nhật ký chi tiết | Trạng thái vắn tắt | ✅ Đầy đủ |
+| Thực thi mỗi prompt | Dùng Số lượng | ✅ Tuỳ chỉnh |
+| Log chi tiết | Trạng thái vắn tắt | ✅ Đầy đủ |
 | Xem ảnh phóng to | ✅ | ❌ |
-| Sửa mô tả trong bảng | ✅ | ❌ |
+| Sửa prompt trong bảng | ✅ | ❌ |
 
 ---
 
 ## 💡 Mẹo Sử Dụng
 
-- **Tắt "Hỏi vị trí lưu"** trong `chrome://settings/downloads` để tải tự động không bị gián đoạn  
+- **Tắt "Hỏi vị trí lưu..."** trong cài đặt tải xuống của trình duyệt để tải tự động không bị gián đoạn  
 - Tất cả cài đặt được **lưu tự động** — mở lại extension sẽ khôi phục đúng lần cuối  
 - Nút 🏠 góc trên trái để quay về **màn hình chọn chế độ** bất cứ lúc nào  
 
