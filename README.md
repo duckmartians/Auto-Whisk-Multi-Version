@@ -1,97 +1,176 @@
-# 🎨 Auto Whisk (Multi-Version) v8.0.0
-1. Download Here  
-   [![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/auto-whisk-prompt-automat/gedfnhdibkfgacmkbjgpfjihacalnlpn)
+<p align="center">
+  <img width="100" height="100" alt="logo" src="https://github.com/user-attachments/assets/86f005b2-bc0c-4542-bd70-3d556a4ff8ce" />
+</p>
 
-2. Beginner’s Guide  
-   [![English](https://img.shields.io/badge/English-blue)](README.md)
+<h1 align="center">Auto Whisk</h1>
+<p align="center">
+  Batch AI image generation with Google Whisk — fully automated.<br>
+  Version 8.3.0 · 7 languages · by <a href="https://duckmartians.info">duckmartians</a><br><br>
+  <a href="https://chromewebstore.google.com/detail/auto-whisk-prompt-automat/gedfnhdibkfgacmkbjgpfjihacalnlpn"><img src="https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge" alt="Download Here"></a><br><br>
+  <a href="README.md"><img src="https://img.shields.io/badge/English-blue" alt="English"></a>
+  <a href="README_vi.md"><img src="https://img.shields.io/badge/Tiếng%20Việt-green" alt="Tiếng Việt"></a>
+</p>
 
-3. Hướng dẫn sử dụng  
-   [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md)
+---
 
-### The Ultimate Automation Assistant for Google Whisk
+## 📖 What is Auto Whisk?
 
-**Auto Whisk** is a powerful Chrome Extension designed to automate your creative workflow on Google Whisk AI. Stop clicking manually and waiting for every single image—let Auto Whisk turn your hundreds of prompts into reality with just one click\! 🚀
+A Chrome extension that **automatically generates images in bulk** on [Google Whisk AI](https://labs.google/fx/tools/whisk). Instead of typing prompts one by one:
 
------
+- Enter a **list of prompts** → Extension generates images sequentially  
+- Enable **auto-download** → Images are saved as soon as they're ready  
+- **Pause / Resume / Stop** at any time  
+- **Retry** failed images with a single click  
 
-## 🌟 Why Auto Whisk?
+> The extension opens as a **side panel** — it doesn't cover your main screen.
 
-  * **⚡ Save Time:** Batch process unlimited prompts. Go grab a coffee while the tool does the heavy lifting.
-  * **📥 Auto-Save:** Generated images are automatically downloaded and organized.
-  * **🧠 Hybrid Core:** Features a multi-version architecture to ensure stability even when Google updates their algorithms.
-  * **🌎 User Friendly:** Fully supports **English** and Vietnamese interfaces.
+---
 
------
+## 🚀 Mode Selection Screen (Gateway)
 
-## 🛠️ Choose Your Engine
+Click the extension icon → the side panel shows 3 options:
 
-Version 8.0.0 introduces a unique **Multi-Version Gateway** allowing you to switch modes instantly.
+| | Mode | Description |
+|:---:|---|---|
+| 🟢 | **7.6.0 — Fast** (Recommended) | Runs in background, no need to open Whisk. Full features. |
+| ⚪ | **7.5.1 — Classic** (Fallback) | Simulates mouse on Whisk page. Use when Fast mode fails. |
+| 🟣 | **G-Labs Automation** | Standalone Windows software, no browser needed. |
 
-| Feature | 🚀 Version 7.6.0 (Recommended) | 🖱️ Version 7.5.1 (Classic) |
-| :--- | :--- | :--- |
-| **Technology** | Direct API Connection | Mouse/DOM Simulation |
-| **Speed** | High Speed | Normal |
-| **Workflow** | **Background Run** (Tab can be hidden) | Requires Whisk tab to stay open |
-| **Ref Images** | ✅ Full Support (Subject, Scene, Style) | ❌ Not Supported |
-| **Customization**| Custom Image Count (1-4) & Aspect Ratio | Fixed at 2 images/prompt |
-| **Use Case** | Daily driver for power users. | Fallback if v7.6.0 encounters issues. |
+🌐 Top-right corner has a **language selector** (7 languages) — your choice is saved automatically.
 
------
+---
 
-## ✨ Key Features
+## ⚡ Fast Mode (7.6.0)
 
-### 1\. Smart Prompt Management
+> **Recommended** — High speed, stable background execution, no need to open Whisk.
 
-  * Input prompt lists manually or **Import from `.txt` files**.
-  * Sequential processing with a smart queue system.
-  * **Auto-Retry:** Automatically handles network errors or stuck generations.
+### Entering Prompts
 
-### 2\. Reference Image Support 🖼️
+Type/paste prompts into the text box, or click **"Import from file"** to load a `.txt` file.
 
-*(Exclusive to v7.6.0)*
-Want to maintain a specific character or style?
+**Two prompt-splitting modes:**
 
-  * Upload reference images for **Subject**, **Scene**, or **Style**.
-  * Built-in **"Upload & Analyze"** tool generates AI captions for your reference images automatically.
+| Mode | How it works | When to use |
+|---|---|---|
+| **1 line = 1 prompt** | Each line is treated as a separate prompt | Short prompts |
+| **Blank line separated** | Consecutive lines are merged into 1 prompt | Long multi-line prompts |
 
-### 3\. Auto Download System 💾
+### Settings
 
-  * Never lose a masterpiece. Images are saved instantly upon generation.
-  * **Smart Filaming:** Files are named based on your prompt content for easy searching.
-  * Custom download folder support.
+| Option | Details |
+|---|---|
+| **Aspect Ratio** | [1:1](file:///d:/Data/Downloads/8.2.2_0/v7.5.1/i18n.js#456-463) · `16:9` · `9:16` · `4:3` · `3:4` |
+| **Image Count** | 1 → 4 images (e.g. 10 prompts × 3 images = 30 images) |
+| **Save Folder** | Subfolder name inside Downloads |
+| **Auto-download** | On/off — default **on** |
 
-### 4\. Modern Dark UI 🌙
+### 🎨 Reference Images
 
-  * Sleek, eye-friendly dark mode design.
-  * Non-intrusive **Side Panel** interface keeps your workspace clean.
+Attach sample images so the AI mimics a specific style, subject, or scene.
 
------
+Click **"Reference Images"** → a management panel opens:
 
-## 📖 Quick Start Guide
+| Category | Description | Max |
+|---|---|:---:|
+| **Subject** | Character / object you want the AI to recreate | 2 |
+| **Scene** | Background / environment to place the subject in | 1 |
+| **Style** | Artistic style you want the AI to follow | 1 |
 
-1.  **Install:** Load the extension into your browser (Chrome/Edge/Brave).
-2.  **Launch:** Click the Auto Whisk icon on the toolbar.
-3.  **Select Version:**
-      * Choose **v7.6.0** (Green Card - Recommended).
-4.  **Configure & Run:**
-      * Paste your prompts or import a file.
-      * Select Aspect Ratio and Image Count.
-      * Click **"Start"** ▶️.
+**How to use:** Click `+` to select an image → Click **"Upload & Analyze"** → Edit caption if needed → **"Save Caption"** → **"Done"**.
 
-> **💡 Pro Tip:** To prevent the browser from asking for a save location for every single image, please disable *"Ask where to save each file before downloading"* in your browser settings.
+> Reference images apply to **all** prompts in your list.
 
------
+### Controls
 
-## ☕ Support the Author
+| Button | Function |
+|:---:|---|
+| ▶ **Start** | Begin generating images sequentially |
+| ⏸ **Pause** | Click again to resume |
+| ⏹ **Stop** | Stop the entire process |
 
-This tool is developed and maintained for free by **duckmartians (Đặng Minh Đức)**.
-If this tool helps speed up your work, consider buying me a coffee\! ❤️
+### Results Table
 
-  * **Donate:** [Buy Me a Coffee](https://duckmartians.info/)
-  * **Website:** [https://duckmartians.info](https://duckmartians.info/)
+| Column | Meaning |
+|---|---|
+| **#** | Row number |
+| **Prompt** | Prompt text *(editable directly)* |
+| **IMG 1, 2…** | Thumbnail — click to **view full size** |
+| **Status** | ⏳ Pending · 🔄 Generating · ✅ Done · 🔃 Error *(click to retry)* |
 
------
+If any row fails → a **"Retry All Errors"** button appears to retry all at once.
 
-*Disclaimer: This is an unofficial tool and is not affiliated with Google. Please use it responsibly and in accordance with the service provider's terms.*
+### Authentication
 
-Copyright © 2025 Đặng Minh Đức (duckmartians). All Rights Reserved.
+The extension **automatically retrieves your Google session**. If no `labs.google` tab is open, it opens a hidden tab → waits for you to sign in → saves the session automatically. Expired sessions are **refreshed automatically**.
+
+> ⚠️ You need a Google account with access to Google Labs.
+
+---
+
+## 🖱️ Classic Mode (7.5.1)
+
+> **Fallback** — Simulates mouse actions on the Whisk page. Requires the Whisk tab to stay open.
+
+### Requirements
+
+- The Whisk tab must be **open** and **active** (in focus)  
+- The extension automatically zooms the page to 50% for optimization  
+
+### Two Start Options
+
+| Option | Description |
+|---|---|
+| 🚀 **Create New Project** | Opens Whisk, creates a new project, then starts |
+| ➡️ **Run on This Project** | Runs immediately on the already-open project |
+
+### Additional Settings
+
+| Option | Details |
+|---|---|
+| **Wait time** | Random (min–max seconds) or fixed (≥10 seconds) |
+| **Runs per prompt** | Each round Whisk creates 2 images (e.g. 5 prompts × 3 repeats = 30 images) |
+| **Start from prompt** | Enter a number to skip earlier prompts |
+
+### Logs & Error Handling
+
+- 📋 **Detailed Log** — tracks every step: preparation, sending, downloading, errors…  
+- 📝 **Failed Prompts** — listed with reasons, click **"Copy Failed Prompts"** to copy and retry  
+- 🔄 **Auto-retry** when queue is full (up to 20 attempts + page reload)  
+- ⏳ **Auto-wait** when an error toast appears, resumes when it clears  
+- 📥 **Final sweep scan** (30 seconds) to ensure no images are missed  
+
+---
+
+## 📊 Mode Comparison
+
+| Feature | ⚡ 7.6.0 Fast | 🖱️ 7.5.1 Classic |
+|---|:---:|:---:|
+| Requires Whisk tab | ❌ | ✅ Required |
+| Speed | ⚡ Fast | 🐢 Slower |
+| Stable background run | ✅ | ⚠️ Needs tab |
+| Image Count / prompt | 1–4 custom | Fixed 2 |
+| Reference images | ✅ | ❌ |
+| Filename by content | ✅ | Sequential number |
+| Aspect Ratio options | 5 ratios | Whisk default |
+| Multi-line prompts | ✅ | ❌ |
+| Custom wait time | Auto 2–5s | ✅ Custom |
+| Runs per prompt | Use Image Count | ✅ Custom |
+| Detailed Log | Brief status | ✅ Full log |
+| Zoom image preview | ✅ | ❌ |
+| Edit prompt in table | ✅ | ❌ |
+
+---
+
+## 💡 Tips
+
+- **Disable "Ask where to save..."** in your browser's download settings for uninterrupted auto-downloads  
+- All settings are **auto-saved** — reopening the extension restores your last session  
+- Click 🏠 in the top-left corner to return to the **mode selection screen** at any time  
+
+---
+
+<p align="center">
+  <b>Designed by <a href="https://duckmartians.info">duckmartians</a></b><br>
+  <a href="https://discord.gg/munMZEBMw5">Discord</a> ·
+  <a href="https://github.com/duckmartians/Auto-Whisk-Multi-Version">GitHub</a>
+</p>
