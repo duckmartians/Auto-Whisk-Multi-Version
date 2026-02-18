@@ -1,97 +1,176 @@
-# 🎨 Auto Whisk (Multi-Version) v8.0.0
-1. Tải tiện ích tại đây  
-   [![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/auto-whisk-prompt-automat/gedfnhdibkfgacmkbjgpfjihacalnlpn)
+<p align="center">
+  <img width="100" height="100" alt="logo" src="https://github.com/user-attachments/assets/86f005b2-bc0c-4542-bd70-3d556a4ff8ce" />
+</p>
 
-2. Beginner’s Guide  
-   [![English](https://img.shields.io/badge/English-blue)](README.md)
+<h1 align="center">Auto Whisk</h1>
+<p align="center">
+  Tạo ảnh AI hàng loạt với Google Whisk — hoàn toàn tự động.<br>
+  Phiên bản 8.3.0 · 7 ngôn ngữ · by <a href="https://duckmartians.info">duckmartians</a><br><br>
+  <a href="https://chromewebstore.google.com/detail/auto-whisk-prompt-automat/gedfnhdibkfgacmkbjgpfjihacalnlpn"><img src="https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge" alt="Download Here"></a><br><br>
+  <a href="README.md"><img src="https://img.shields.io/badge/English-blue" alt="English"></a>
+  <a href="README_vi.md"><img src="https://img.shields.io/badge/Tiếng%20Việt-green" alt="Tiếng Việt"></a>
+</p>
 
-3. Hướng dẫn sử dụng  
-   [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md)
+---
 
-### Trợ thủ đắc lực cho Sáng tạo Nghệ thuật trên Google Whisk
+## 📖 Auto Whisk là gì?
 
-**Auto Whisk** là công cụ mở rộng (Extension) giúp bạn tự động hóa quy trình tạo ảnh trên Google Whisk AI. Không còn phải ngồi canh từng ảnh, không còn mỏi tay click chuột – hãy để Auto Whisk giúp bạn hiện thực hóa hàng trăm ý tưởng chỉ với một cú click\! 🚀
+Extension trên Chrome giúp **tự động tạo ảnh hàng loạt** trên [Google Whisk AI](https://labs.google/fx/tools/whisk). Thay vì nhập từng mô tả rồi chờ, bạn chỉ cần:
 
------
+- Nhập **danh sách mô tả** → Extension tạo ảnh lần lượt  
+- Bật **tải tự động** → Ảnh về máy ngay khi xong  
+- **Tạm dừng / Tiếp tục / Dừng hẳn** bất cứ lúc nào  
+- **Thử lại** những ảnh bị lỗi chỉ với 1 click  
 
-## 🌟 Tại sao bạn sẽ yêu thích Auto Whisk?
+> Extension mở dưới dạng **bảng bên hông** (side panel) — không che màn hình chính.
 
-  * **⚡ Tiết kiệm thời gian:** Nhập hàng loạt câu lệnh (prompt) và để tool tự chạy. Đi uống cà phê và quay lại tận hưởng thành quả.
-  * **📥 Tự động lưu trữ:** Ảnh tạo ra được tự động tải về máy tính, sắp xếp gọn gàng.
-  * **🧠 Thông minh & Linh hoạt:** Hỗ trợ nhiều chế độ chạy để đảm bảo bạn luôn tạo được ảnh dù Google có thay đổi thuật toán.
-  * **🇻🇳 Thân thiện:** Giao diện hoàn toàn bằng **Tiếng Việt** (và cả tiếng Anh).
+---
 
------
+## 🚀 Màn Hình Chọn Chế Độ (Gateway)
 
-## 🛠️ Chọn phiên bản phù hợp với bạn
+Bấm biểu tượng extension → bảng bên hông hiện 3 lựa chọn:
 
-Phiên bản 8.0.0 mang đến cơ chế **Đa Phiên Bản (Multi-Version)** độc đáo ngay trong một công cụ.
+| | Chế độ | Mô tả |
+|:---:|---|---|
+| 🟢 | **7.6.0 — Nhanh** (Khuyên dùng) | Chạy ngầm, không cần mở Whisk. Đầy đủ tính năng. |
+| ⚪ | **7.5.1 — Cổ điển** (Dự phòng) | Mô phỏng chuột trên trang Whisk. Dùng khi bản Nhanh lỗi. |
+| 🟣 | **G-Labs Automation** | Phần mềm Windows độc lập, không cần trình duyệt. |
 
-| Tính năng | 🚀 Phiên bản 7.6.0 (Khuyên dùng) | 🖱️ Phiên bản 7.5.1 (Cổ điển) |
-| :--- | :--- | :--- |
-| **Công nghệ** | Kết nối trực tiếp hệ thống (API) | Mô phỏng thao tác chuột (DOM) |
-| **Tốc độ** | Rất nhanh | Bình thường |
-| **Chế độ chạy** | **Chạy ngầm** (Không cần mở tab Whisk) | Phải giữ tab Whisk luôn mở |
-| **Ảnh tham chiếu** | ✅ Hỗ trợ đầy đủ (Subject, Scene, Style) | ❌ Không hỗ trợ |
-| **Tùy chỉnh** | Tùy chọn số lượng ảnh (1-4), Tỉ lệ ảnh | Mặc định 2 ảnh/lần |
-| **Khi nào dùng?** | Sử dụng hàng ngày, cho mọi nhu cầu. | Dùng dự phòng khi bản 7.6.0 gặp lỗi. |
+🌐 Góc phải trên có nút **đổi ngôn ngữ** (7 ngôn ngữ) — lựa chọn được lưu tự động.
 
------
+---
 
-## ✨ Tính năng nổi bật
+## ⚡ Chế Độ Nhanh (7.6.0)
 
-### 1\. Quản lý Prompt thông minh
+> **Khuyên dùng** — Tốc độ cao, chạy ngầm ổn định, không cần mở trang Whisk.
 
-  * Nhập danh sách prompt thủ công hoặc **nhập từ file `.txt`** có sẵn.
-  * Tự động chạy lần lượt từng prompt.
-  * Chế độ "Thử lại" (Retry) thông minh cho các prompt bị lỗi.
+### Nhập mô tả
 
-### 2\. Hỗ trợ Ảnh Tham Chiếu (Reference Image) 🖼️
+Gõ/dán các mô tả vào ô văn bản, hoặc bấm **"Nhập từ file"** để chọn file `.txt`.
 
-*(Chỉ có trên v7.6.0)*
-Bạn muốn tạo ảnh theo phong cách cụ thể hoặc giữ nguyên nhân vật?
+**Hai chế độ tách mô tả:**
 
-  * Upload ảnh mẫu cho **Chủ thể (Subject)**, **Bối cảnh (Scene)** hoặc **Phong cách (Style)**.
-  * Tích hợp công cụ phân tích ảnh để tự động tạo caption mô tả cho ảnh mẫu.
+| Chế độ | Cách hoạt động | Khi nào dùng |
+|---|---|---|
+| **1 dòng = 1 mô tả** | Mỗi dòng là 1 mô tả riêng | Mô tả ngắn |
+| **Cách dòng trống** | Các dòng liền nhau ghép thành 1 mô tả | Mô tả dài nhiều dòng |
 
-### 3\. Tự động tải xuống (Auto Download) 💾
+### Thiết lập
 
-  * Không lo mất ảnh đẹp\! Tool tự động lưu ảnh ngay khi tạo xong.
-  * Tùy chỉnh thư mục lưu trữ dễ dàng.
-  * Đặt tên file thông minh kèm theo nội dung prompt để dễ tìm kiếm.
+| Tùy chọn | Chi tiết |
+|---|---|
+| **Tỉ lệ ảnh** | `1:1` · `16:9` · `9:16` · `4:3` · `3:4` |
+| **Số ảnh / mô tả** | 1 → 4 ảnh (VD: 10 mô tả × 3 ảnh = 30 ảnh) |
+| **Thư mục lưu** | Tên thư mục con trong Downloads |
+| **Tải tự động** | Bật/tắt — mặc định **bật** |
 
-### 4\. Giao diện Dark Mode hiện đại 🌙
+### 🎨 Ảnh tham chiếu
 
-  * Thiết kế tối màu dịu mắt, giúp bạn làm việc lâu không mỏi.
-  * Bảng điều khiển Side Panel tiện lợi, không che mất màn hình làm việc chính.
+Đính kèm ảnh mẫu để AI bắt chước phong cách, chủ thể hoặc bối cảnh.
 
------
+Bấm **"Ảnh tham chiếu"** → cửa sổ quản lý hiện ra:
 
-## 📖 Hướng dẫn sử dụng nhanh
+| Nhóm | Mô tả | Tối đa |
+|---|---|:---:|
+| **Chủ thể** | Nhân vật / đối tượng bạn muốn AI vẽ lại | 2 |
+| **Bối cảnh** | Phong cảnh / nền muốn đặt chủ thể vào | 1 |
+| **Phong cách** | Phong cách nghệ thuật muốn AI bắt chước | 1 |
 
-1.  **Cài đặt:** Tải và cài đặt Extension vào trình duyệt (Chrome/Edge/Cốc Cốc).
-2.  **Khởi động:** Bấm vào icon Auto Whisk trên thanh công cụ.
-3.  **Chọn phiên bản:**
-      * Bấm chọn **v7.6.0** (Màu xanh - Khuyên dùng).
-4.  **Thiết lập & Chạy:**
-      * Nhập prompt vào ô trống.
-      * Chọn tỉ lệ ảnh (Vuông, Ngang, Dọc) và số lượng ảnh.
-      * Bấm **"Bắt đầu"** ▶️.
+**Cách dùng:** Bấm `+` chọn ảnh → Bấm **"Upload & Phân tích"** (AI tự phân tích nội dung) → Sửa caption nếu cần → **"Lưu Caption"** → **"Xong"**.
 
-> **💡 Mẹo nhỏ:** Để quá trình tải ảnh không bị gián đoạn, hãy tắt tính năng *"Hỏi vị trí lưu từng tệp trước khi tải xuống"* trong cài đặt trình duyệt của bạn.
+> Ảnh tham chiếu được áp dụng cho **tất cả** mô tả trong danh sách.
 
------
+### Điều khiển
 
-## ☕ Ủng hộ tác giả
+| Nút | Chức năng |
+|:---:|---|
+| ▶ **Bắt đầu** | Khởi chạy tạo ảnh lần lượt |
+| ⏸ **Tạm dừng** | Bấm lại để tiếp tục |
+| ⏹ **Dừng** | Dừng hẳn toàn bộ |
 
-Công cụ này được phát triển và duy trì miễn phí bởi **duckmartians (Đặng Minh Đức)**.
-Nếu tool giúp ích cho công việc của bạn, hãy mời mình một ly cà phê nhé\! ❤️
+### Bảng kết quả
 
-  * **Donate:** [Buy Me a Coffee](https://duckmartians.info/)
-  * **Website:** [https://duckmartians.info](https://duckmartians.info/)
+| Cột | Ý nghĩa |
+|---|---|
+| **#** | Số thứ tự |
+| **Prompt** | Nội dung mô tả *(có thể sửa trực tiếp)* |
+| **IMG 1, 2…** | Ảnh thu nhỏ — bấm để **xem phóng to** |
+| **TT** | ⏳ Chờ · 🔄 Đang tạo · ✅ Xong · 🔃 Lỗi *(bấm để thử lại)* |
 
------
+Nếu có lỗi → nút **"Thử lại các lỗi"** xuất hiện để thử lại tất cả cùng lúc.
 
-*Lưu ý: Đây là phần mềm bổ trợ không chính thức và không liên kết trực tiếp với Google. Vui lòng sử dụng tuân thủ chính sách của nhà cung cấp dịch vụ.*
+### Đăng nhập
 
-Copyright © 2025 Đặng Minh Đức (duckmartians). All Rights Reserved.
+Extension **tự lấy phiên đăng nhập** Google của bạn. Nếu chưa có tab `labs.google`, extension tự mở tab ẩn → chờ bạn đăng nhập → lưu phiên tự động. Phiên hết hạn sẽ được **tự làm mới**.
+
+> ⚠️ Bạn cần tài khoản Google có quyền truy cập Google Labs.
+
+---
+
+## 🖱️ Chế Độ Cổ Điển (7.5.1)
+
+> **Dự phòng** — Mô phỏng thao tác chuột trên trang Whisk. Bắt buộc giữ tab Whisk mở.
+
+### Yêu cầu
+
+- Tab Whisk phải **đang mở** và là tab **đang xem** (active)  
+- Extension tự thu nhỏ trang xuống 50% để tối ưu  
+
+### Hai cách chạy
+
+| Tùy chọn | Mô tả |
+|---|---|
+| **Dự án mới** | Tự mở Whisk, tạo project mới rồi chạy |
+| **Tiếp tục trên trang hiện tại** | Chạy ngay trên project đang mở |
+
+### Thiết lập riêng
+
+| Tùy chọn | Chi tiết |
+|---|---|
+| **Chờ giữa các lần gửi** | Ngẫu nhiên (min–max giây) hoặc cố định (≥10 giây) |
+| **Số lần lặp / mô tả** | Mỗi lần Whisk tạo 2 ảnh (VD: 5 mô tả × 3 lần = 30 ảnh) |
+| **Bắt đầu từ vị trí** | Nhập số thứ tự để bỏ qua các mô tả phía trước |
+
+### Nhật ký & Xử lý lỗi
+
+- 📋 **Nhật ký thời gian thực** — theo dõi từng bước: chuẩn bị, gửi mô tả, tải ảnh, lỗi…  
+- 📝 **Danh sách prompt lỗi** — liệt kê riêng kèm lý do, bấm **"Sao chép"** để copy và thử lại  
+- 🔄 **Tự thử lại** khi hàng đợi đầy (tối đa 20 lần + tải lại trang)  
+- ⏳ **Tự chờ** khi gặp thông báo lỗi, tiếp tục khi lỗi biến mất  
+- 📥 **Quét rà soát cuối** (30 giây) để đảm bảo không bỏ sót ảnh  
+
+---
+
+## 📊 So Sánh Hai Chế Độ
+
+| Tính năng | ⚡ 7.6.0 Nhanh | 🖱️ 7.5.1 Cổ điển |
+|---|:---:|:---:|
+| Cần mở tab Whisk | ❌ | ✅ Bắt buộc |
+| Tốc độ | ⚡ Nhanh | 🐢 Chậm hơn |
+| Chạy nền ổn định | ✅ | ⚠️ Cần giữ tab |
+| Số ảnh / mô tả | 1–4 tuỳ chọn | Cố định 2 |
+| Ảnh tham chiếu | ✅ | ❌ |
+| Tên file theo nội dung | ✅ | Theo số thứ tự |
+| Chọn tỉ lệ ảnh | 5 tỉ lệ | Mặc định Whisk |
+| Mô tả nhiều dòng | ✅ | ❌ |
+| Tuỳ chỉnh thời gian chờ | Tự động 2–5s | ✅ Tuỳ chỉnh |
+| Lặp mô tả | Dùng số ảnh | ✅ Tuỳ chỉnh |
+| Nhật ký chi tiết | Trạng thái vắn tắt | ✅ Đầy đủ |
+| Xem ảnh phóng to | ✅ | ❌ |
+| Sửa mô tả trong bảng | ✅ | ❌ |
+
+---
+
+## 💡 Mẹo Sử Dụng
+
+- **Tắt "Hỏi vị trí lưu"** trong `chrome://settings/downloads` để tải tự động không bị gián đoạn  
+- Tất cả cài đặt được **lưu tự động** — mở lại extension sẽ khôi phục đúng lần cuối  
+- Nút 🏠 góc trên trái để quay về **màn hình chọn chế độ** bất cứ lúc nào  
+
+---
+
+<p align="center">
+  <b>Designed by <a href="https://duckmartians.info">duckmartians</a></b><br>
+  <a href="https://discord.gg/munMZEBMw5">Discord</a> ·
+  <a href="https://github.com/duckmartians/Auto-Whisk-Multi-Version">GitHub</a>
+</p>
