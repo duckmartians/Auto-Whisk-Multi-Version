@@ -6,7 +6,8 @@
 <p align="center">
   Batch AI image generation with Google Whisk — fully automated.<br>
   Version 8.3.0 · 7 languages · by <a href="https://duckmartians.info">duckmartians</a><br><br>
-  <a href="https://github.com/duckmartians/G-Labs-Automation/releases/latest"><img src="https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge" alt="Download Here"></a><br><br>
+  <a href="https://chromewebstore.google.com/detail/auto-whisk-prompt-automat/gedfnhdibkfgacmkbjgpfjihacalnlpn"><img src="https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge" alt="Download Here"></a>
+  <a href="https://github.com/duckmartians/G-Labs-Automation/releases/latest"><img src="https://img.shields.io/badge/Download%20for%20Windows-%F0%9F%92%BB-blue?style=for-the-badge" alt="Download for Windows"></a><br><br>
   <a href="README.md"><img src="https://img.shields.io/badge/English-blue" alt="English"></a>
   <a href="README_vi.md"><img src="https://img.shields.io/badge/Tiếng%20Việt-green" alt="Tiếng Việt"></a>
 </p>
